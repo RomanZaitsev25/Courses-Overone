@@ -3,10 +3,11 @@
 
 a = int(input('Enter the number:'))
 c = 0
-for i in range(1, a // 2):
+for i in range(2, a + 1):
     if a % i == 0:
-        c = c + 1
-if c <= 0:
+        c = i
+        break
+if c == a:
     print('Число простое')
 else:
     print('Число не простое')
