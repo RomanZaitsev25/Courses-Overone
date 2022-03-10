@@ -19,27 +19,34 @@ CREATE TABLE IF NOT EXISTS tab_1(
 
 cursor.execute('''
 INSERT INTO tab_1 (col_1, col_2)
-VALUES('Roman', 'Zaitsev')
+VALUES('Roman', 'Zaitsev'),
+('Roman', 'Zaitsev'),
+('Roman', 'Zaitsev')
 ''')
 conn.commit()
+
 cursor.execute('''
 SELECT * FROM tab_1
 ''')
 k = cursor.fetchall()
 print(k)
+
 cursor.execute('''
-DELETE FROM tab_1 WHERE col_1 = 'Roman'
+DELETE FROM tab_1 WHERE id = 2
 ''')
 conn.commit()
+
 cursor.execute('''
 SELECT * FROM tab_1
 ''')
 k = cursor.fetchall()
 print(k)
+
 cursor.execute('''
-UPDATE tab_1 SET col_2 = 'hello world' WHERE id=1
+UPDATE tab_1 SET col_2 = 'hello world' WHERE id=3
 ''')
 conn.commit()
+
 cursor.execute('''
 SELECT * FROM tab_1
 ''')
