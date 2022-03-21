@@ -14,6 +14,9 @@ school['6a'] = 900
 school['11г'] = 40
 del school['1a']
 result = 0
+
 for i in school.values():
     result += i
+# Вывел результат двумя разными  вариантами
 print(f' {school=} \n {result=}')
+print('School={}\nResult={}'.format(school, result))
