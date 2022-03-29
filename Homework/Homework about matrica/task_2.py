@@ -20,13 +20,3 @@ for i in range(M):
 
 
 
-
-# for i in range(M):
-#     A.insert(i, [])
-#     for j in range(N):
-#         A[i].insert(j, random.randint(1, 100))
-# print(A)
-# for i in range(M):
-#     for j in range(N):
-#         print(A[i][j], end='')
-#     print()
