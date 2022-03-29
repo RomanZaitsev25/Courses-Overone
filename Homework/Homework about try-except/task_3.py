@@ -3,14 +3,14 @@
 # Если второе число 0, то программа запрашивает ввод чисел заново.
 # Также если были введены буквы, то обработать исключение.
 while True:
-    a = input('Введите число:')
-    b = input('Введите число:')
+    a = input('Enter the first number:')
+    b = input('Enter the second number:')
     try:
         result = int(a) / int(b)
     except ValueError:
-        print('Писать только числа')
+        print('Write only numbers')
     except ZeroDivisionError:
-        print('ввод числа заново')
+        print('Enter the number again')
     else:
         print(result)
         break

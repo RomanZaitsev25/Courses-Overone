@@ -3,11 +3,11 @@
 # возвести в квадрат. Также используйте оператор Finally
 
 try:
-    a = int(input('Enter first number:'))
-    b = int(input('Enter second number:'))
+    a = int(input('Enter the first number:'))
+    b = int(input('Enter the second number:'))
     c = a / b
 except ZeroDivisionError:
-    print('На ноль делить нельзя')
+    print('You can not divide by zero')
 else:
     print(c ** 2)
 finally:
