@@ -4,6 +4,7 @@
 # Ноль использовать как заверщение программы(операции)
 
 # Ввод через клавиатуру, первого числа
+
 a = int(input('Enter a number one:'))
 # Ввод через клавиатуру, второго числа
 b = int(input('Enter a number two:'))
@@ -45,4 +46,4 @@ while True:
             print('Result:', multiply(a, b))
 
         if x == '/':
-            print('Result:', (a, b))
+            print('Result:', devite(a, b))
