@@ -4,7 +4,7 @@ def feb(n):
         return 0
     if n == 2:
         return 1
-    return feb(n-1) + feb(n-2)
+    return feb(n - 1) + feb(n - 2)
 
 
 if __name__ == '__main__':
