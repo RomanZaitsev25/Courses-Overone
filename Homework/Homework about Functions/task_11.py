@@ -6,5 +6,6 @@ def feb(n):
         return 1
     return feb(n-1) + feb(n-2)
 
+
 if __name__ == '__main__':
-    print(feb(7))
+    print(feb(16))
