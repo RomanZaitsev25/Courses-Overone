@@ -26,7 +26,7 @@ print(k)
 
 
 class A:
-    def baz_d(self, a=None, b=None, c=None):
+    def bd(self, a=None, b=None, c=None):
         if a is not None and b is None and c is None:
             cursor.execute('''
                 INSERT INTO tab_1(col_1)
@@ -49,7 +49,7 @@ class A:
 
 if __name__ == '__main__':
     a_obj = A()
-    a_obj.baz_d('1', '1', 1)
+    a_obj.bd('1', '1', 1)
     cursor.execute('''
         SELECT * FROM TAB_1
     ''')
