@@ -1,0 +1,6 @@
+# a = dict(zip([1, 2, 3, ], [9, 9, 9]))
+# print(a)
+# a = dict([(1, 2), (3, 4)])
+# print(a)
+a = dict.fromkeys([5, 7], 5)
+print(a)
