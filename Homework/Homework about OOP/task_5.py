@@ -71,5 +71,5 @@ if __name__ == '__main__':
     print(engAlphabet_obj.letters)
     print(engAlphabet_obj.letters_num())
     print(engAlphabet_obj.is_en_letter('F'))
-    print(engAlphabet_obj.is_en_letter('Щ'))
+    print(engAlphabet_obj.is_en_letter('Ъ'))
     print(engAlphabet_obj.example())
